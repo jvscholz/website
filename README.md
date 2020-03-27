@@ -1,3 +1,2 @@
 # website portfolio
-
-j scholz's website portfolio 
+website portfolio 
