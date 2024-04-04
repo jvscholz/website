@@ -8,7 +8,7 @@
 body {top: 0; left: 0; width: 99%; height: 97%;
     position: absolute; display: table}
   p {display: table-cell; vertical-align: middle; text-align: center}
-    #timezone * {text-decoration: none;}
+#timezone * {text-decoration: none;}
 
 }
 </style>
@@ -24,11 +24,11 @@ body {top: 0; left: 0; width: 99%; height: 97%;
     formatter = new Intl.DateTimeFormat([], options);
 
     // set time
-        setInterval(
-            () => {
-                document.querySelector("#time").innerText = formatter.format(new Date());
-            }
-        , 1000)
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
 </script>
 </head>
 
