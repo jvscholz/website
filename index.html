@@ -11,7 +11,30 @@
 body {top: 0; left: 0; width: 99%; height: 97%;
     position: absolute; display: table}
   p {display: table-cell; vertical-align: middle; text-align: center}
+
+#timezone * {text-decoration: none;}
+
+}
+
 </style>
+
+<script type="text/javascript">
+    // declare time zone formatting
+    let options = {
+        timeZone: 'US/Mountain',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    // set time
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
 </head>
 
 
@@ -23,13 +46,17 @@ body {top: 0; left: 0; width: 99%; height: 97%;
 <br>
 <img src="https://i.imgur.com/zy8BRWw.png" style="width:560px;"><br>
 <br>
-<i><a href="//24timezones.com/world_directory/current_salt_lake_city_time.php" style="text-decoration: none" class="clock24" id="tz24-1562550567-c1220-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMCIsInNob3dzZWNvbmRzIjoiMSIsInNob3d0aW1lem9uZSI6IjEiLCJ0eXBlIjoiZCIsImxhbmciOiJlbiJ9" title="Salt Lake City Time" target="_blank" rel="nofollow">TIME IN SALT LAKE CITY</a>
-</i><script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<span id=timezone>
+<i>
+<a href="https://24timezones.com/world_directory/current_salt_lake_city_time.php">TIME IN SALT LAKE CITY</a> - <span
+    id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/mt">MDT</a>
+</i>
+</span>
 <br><br>
 
 <a href="http://jvscholz.com/about.html">about</a> //
 <a href="http://jvscholz.com/faq.html">faq</a> //
-<a href="http://youtube.com/c/jamesscholz">youtube</a> //
+<a href="http://jvscholz.com/blog.html">blog</a> //
 <a href="https://drive.google.com/file/d/17CnAyDkTUckt3jNoQjzsUmVlzP1jdp6t/view?usp=sharing">resume</a> //
 <a href="http://jvscholz.com/contact.html">contact</a>
 
