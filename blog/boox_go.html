@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-17 Mon 15:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>boox go</title>
+<meta name="author" content="j" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">boox go</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4256fed">1. intro</a>
+<ul>
+<li><a href="#orgcd61460">1.1. what it is</a></li>
+<li><a href="#org3b45d36">1.2. how I use it</a></li>
+<li><a href="#org0fef406">1.3. my history with boox devices</a></li>
+</ul>
+</li>
+<li><a href="#orgd11337b">2. hardware</a>
+<ul>
+<li><a href="#org7e3598e">2.1. pros</a></li>
+<li><a href="#org2d82096">2.2. cons</a></li>
+</ul>
+</li>
+<li><a href="#orgd90208e">3. software</a>
+<ul>
+<li><a href="#org334323b">3.1. pros</a></li>
+<li><a href="#orgcbe5781">3.2. cons</a></li>
+</ul>
+</li>
+<li><a href="#org0b1af02">4. conclusion</a>
+<ul>
+<li><a href="#orgde2f23a">4.1. why I prefer e-ink tablets over ipads</a></li>
+<li><a href="#org9c4ab0d">4.2. my dream boox tablet</a></li>
+<li><a href="#orgfdb1c39">4.3. purchase reccomendations</a></li>
+<li><a href="#org6d35b61">4.4. some considerations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4256fed" class="outline-2">
+<h2 id="org4256fed"><span class="section-number-2">1.</span> intro</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgcd61460" class="outline-3">
+<h3 id="orgcd61460"><span class="section-number-3">1.1.</span> what it is</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>this is the first 300ppi tablet sold in america that&rsquo;s not the kindle scribe</li>
+<li>the new entry-level 10.3&ldquo; note taker from boox</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3b45d36" class="outline-3">
+<h3 id="org3b45d36"><span class="section-number-3">1.2.</span> how I use it</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>note taking (stock note taking app)</li>
+<li>reading books (koreader)</li>
+<li>reading textbooks (neoreader)</li>
+<li>reading manga (mihon)</li>
+<li>marking up pdfs (stock note taking app)</li>
+<li>synching files easily w/ my computer (syncthing)</li>
+<li>as a type writer w/ a wirelesss keyboard (word)</li>
+<li>customized homescreen (aio launcher)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0fef406" class="outline-3">
+<h3 id="org0fef406"><span class="section-number-3">1.3.</span> my history with boox devices</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>my previous devices:
+<ul class="org-ul">
+<li>boox note air 1</li>
+<li>boox nova air</li>
+<li>boox tab ultra c pro</li>
+<li>boox tab 10c</li>
+<li>boox palma</li>
+<li>boox darwin 6</li>
+<li>boox leaf2</li>
+<li>boox poke 2</li>
+<li>boox mira pro</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd11337b" class="outline-2">
+<h2 id="orgd11337b"><span class="section-number-2">2.</span> hardware</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7e3598e" class="outline-3">
+<h3 id="org7e3598e"><span class="section-number-3">2.1.</span> pros</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>lightweight, dense, seemingly durable construction.</li>
+<li>battery life is pretty good for what it does. it <b>does not</b> have bsr (boox super refresh) which saves on battery life but has more ghosting</li>
+<li>the screen is gorgeous, but note it&rsquo;s carta 1200 and not carta 1300</li>
+<li>it&rsquo;s black &amp; white. it seems like the consumer e-ink industry is heading towards color. personally I prefer black and white for the higher contrast and battery life (due to not needing the frontlight to compensate)</li>
+<li>I think it&rsquo;s pretty good looking</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2d82096" class="outline-3">
+<h3 id="org2d82096"><span class="section-number-3">2.2.</span> cons</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>storage is not expandable unline the boox note x. this is sort of unfair though since it has 50gb free vs remarkable&rsquo;s 6.5 and supernote a5&rsquo;s 24gb</li>
+<li>e-ink screens in general are fragile, <b>take extra care in transport</b></li>
+<li>I would have prefered a off white back as opposed to a pure white back, just cause i think it&rsquo;d look better and look better longer</li>
+<li>the included pen is horrible, hollow and has no ereader with a cheap injection mold feel</li>
+<li>no finger print scanner</li>
+<li>has a chin</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd90208e" class="outline-2">
+<h2 id="orgd90208e"><span class="section-number-2">3.</span> software</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org334323b" class="outline-3">
+<h3 id="org334323b"><span class="section-number-3">3.1.</span> pros</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>extremely capable, easily the most capable of any eink note taking tablet</li>
+<li>android</li>
+<li>can customize the launcher and lockscreen</li>
+<li>notetaker and nenoreader are excellent</li>
+<li>can sync with a lot of shit bc android</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcbe5781" class="outline-3">
+<h3 id="orgcbe5781"><span class="section-number-3">3.2.</span> cons</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>can be hard to learn</li>
+<li>a little buggy at times</li>
+<li>the version of android never gets updated, however the functionality always gets updated</li>
+<li>pen doesn&rsquo;t support tilt atm</li>
+<li>other note taking apps don&rsquo;t really work well</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0b1af02" class="outline-2">
+<h2 id="org0b1af02"><span class="section-number-2">4.</span> conclusion</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgde2f23a" class="outline-3">
+<h3 id="orgde2f23a"><span class="section-number-3">4.1.</span> why I prefer e-ink tablets over ipads</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>who it&rsquo;s for:
+not for video games
+intereted in reading, fairly purpose built device
+intentional time usage
+I personally rarely see people actually productive w/ an ipad. I tend to associate it w/ youtube and kids playing roblox</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9c4ab0d" class="outline-3">
+<h3 id="org9c4ab0d"><span class="section-number-3">4.2.</span> my dream boox tablet</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>b&amp;w 300 ppi w/ boox nova screen texture</li>
+<li>tab ultra design w/o camera or this design without the chin</li>
+<li>sd card slot</li>
+<li>fingerprint reader</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfdb1c39" class="outline-3">
+<h3 id="orgfdb1c39"><span class="section-number-3">4.3.</span> purchase reccomendations</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>I would never buy a kindle scribe because the software is way off. price is ok</li>
+<li>I wouldn&rsquo;t buy a remarkable because it doesn&rsquo;t do much. i suppose if you only wanted to do note taking they&rsquo;re ok. not for pdf annotion or reading. that being said I don&rsquo;t even like the note taking software that much. imo it&rsquo;s far too expensive for what it is. difficult to sync notes how I want to</li>
+<li>I would buy a supernote if I didn&rsquo;t need all the android functionality and just wanted a solid note taker w/ ok design. i wish they had a magnetic pen w/ ereaser</li>
+<li>I would buy a boox if I wanted to do a lot with my tablet, such as reading manga and using android apps</li>
+<li>don&rsquo;t get this if all you want to do is read regular books, it would be too big and too overkill. consider watching my other video</li>
+<li>if you&rsquo;re not in a huge rush to buy a tablet, supernote is releasing a competitor, the a5 supernote soon. it&rsquo;s promising and seems to also run android. the public also holds supernote in higher regard over boox because they have really good customer service</li>
+<li>if you want a boox device and don&rsquo;t mind the lack of frontlight, this one is really solid</li>
+<li>if you want a boox device and want a frontlight, there&rsquo;s the note 3c. I don&rsquo;t like it&rsquo;s hardware, it has weird proportions and an off putting color pallete. it also has a color screen which is a con for some, also worse battery life but better performance. the tab ultra has the bizzare camera bump, overly smooth screen texture, and has a 227 ppi screen unless you opt for the c version which has a darker screen and worse battery life has a result. i have personally been happy with the chinese exlusive boox note x and boox tab 10c w/ healing shield korea screen protector, however these devices are difficult to get outside of china. i would probably get a boox tab ultra (non c) if I had to get a boox tablet w/ a frontlight. deal with the camera bump w/ a sleeve</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6d35b61" class="outline-3">
+<h3 id="org6d35b61"><span class="section-number-3">4.4.</span> some considerations</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>boox releases a lot of tablets so there&rsquo;s a chance it&rsquo;ll be &ldquo;old&rdquo; in 6 months</li>
+<li>boox is a chinese company for those conerned. it sends data back to their servers but you can use adb to disable this</li>
+<li>boox oem cases and pens tend to be super mid and not worth it, it can be hard to find third party alternatives but there are good emr pens in the market. i perrsonally just use a padded laptop sleeve with a kindle scribe pen/ or the samsung s4 pen</li>
+<li>this is personally my second favorite writing feel, next to the titanium nib + healing shield korea sreen protector. this is a lot better to actually use though</li>
+<li>sort of expensive for what it is, but in this industry this is actually a pretty good value. i suspect this will the the entry for a lot of people entering the e-ink world</li>
+<li>onyxboox.com is not the official website, boox.com is. don&rsquo;t buy from goodereader</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: j</p>
+<p class="date">Created: 2024-06-17 Mon 15:32</p>
+</div>
+</body>
+</html>
