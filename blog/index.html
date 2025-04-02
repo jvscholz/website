@@ -1,118 +1,217 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Index of /blog/</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of /blog</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 500;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+            font-weight: 500;
+            color: #333;
+            background-color: #fafafa;
+        }
+        td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            width: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .file-icon {
+            color: #8e8e93;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .folder-icon {
+            color: #0366d6;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .parent {
+            display: flex;
+            align-items: center;
+        }
+        .footer {
+            padding: 10px 20px;
+            color: #6e6e6e;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container-fluid">
-    <h3 class="text-muted" style="padding-top: 12px; padding-bottom: 12px; text-decoration-color: rgb(0, 0, 0); color: rgb(0, 0, 0);"><b style="color: rgb(63, 59, 59);">Index of /blog/</b></h3>
-   <table class="table table-sm table-hover table-striped">
-		<thead>
-			<tr>
-				<th style="width: 65%">
-					Filename
-				</th>
-				<th style="width: 15%" >
-					Size
-				</th>
-				<th style="width: 20%">
-					Last Modified
-				</th>
-			</tr>
-		</thead>
-		<tbody>
-            <tr>
-    <td>
-        <p style="display: none">..</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAsSwAALEsBpT2WqQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFISURBVGiB7Zg9coMwEEa/9eQAJnfAOYcvlaiL0oFPlWtg3yGkS6lUzlDAjn52rSWj14PeG7DRCmg0Go1/i5tm/3r9GjTXIK0bu2n2gfAOAAFhvJyencY6KgFL+TtaEeIBa/J3NCJEAzj5vwUJ56HvPqXWfJK6UYx8IPhRUB4QegKx8pe++5BYb0lxQE15oDCgtjxQEGBBHsgMsCIPZARYkgcSA6zJAwkBFuWByACr8kBEQIz8IxhP3arrgbvIijzHZsAe5AHuCRzo54Ee2WwGDP1xJCKVKUoS9jewh4i4v9Hb91sIgR3ONedejvgPmdGItK2EwYj0zZyxiLzttKGI/IHGSETZSGkgonyorxwhc6xSMULsZK5WxO6PFtm9UCrDS+e5vVMgeEl5QOt4feV1Mnu0uMUyota8XIybZu+m2df2aDQaDT1+AR8wAjICbNVxAAAAAElFTkSuQmCC" /><a href="..">..</a>
-    </td>
-    <td>-</td>
-    <td>17-Jun-2024 22:24</td>
-</tr>
-
-            <tr>
-    <td>
-        <p style="display: none">boox.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="boox.html">boox.html</a>
-    </td>
-    <td>3 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">boox_go.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="boox_go.html">boox_go.html</a>
-    </td>
-    <td>18 kB</td>
-    <td>17-Jun-2024 15:32</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">eduroam.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="eduroam.html">eduroam.html</a>
-    </td>
-    <td>2 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">eink.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="eink.html">eink.html</a>
-    </td>
-    <td>1 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">focus.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="focus.html">focus.html</a>
-    </td>
-    <td>3 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">gear.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="gear.html">gear.html</a>
-    </td>
-    <td>2 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">keitai.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="keitai.html">keitai.html</a>
-    </td>
-    <td>1 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">photos1.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="photos1.html">photos1.html</a>
-    </td>
-    <td>0 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-<tr>
-    <td>
-        <p style="display: none">pocket_ereaders.html</p><img style="margin-right: 5px; max-width: 20px"
-            src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAgNgAAIDYBRqocHQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHSSURBVGiB7Zo7TsNAEIb/NYa8bKcIRQ6QMuICdHQIIdGkpOACabgHB+AKkQBR01FFgi4NDUkTKRilgSQkZLNDQSKB5HUefkyK/STLlnc0u59WXq/GBgy8iLBG3/frAM6JKBdXh/l8/tFxnLoQYhpHPq1Ar9c7AvCglBJEFEdfAIBcLvfiuu6rbdtnQojvqPksXcNgMDiUUgqlFIgotmM8HmeI6FhKeUdEe4kJDIfDnajJgyCi7Pwci4RWYDabhT4fEcgsLuKQ0AokhWVZ/wYbVSJ1AfyZgQVRJFIXEELYQfc3leCYAS2bSGyVALC+xNYJAOtJpC4wna62g5hL3BDRblhc6gL9fh+TyUStEktEJ1LK2zCJwBUhSRzHQbPZtAqFAoQIfVcSgA/P8w5KpdIFgOugoNQFstksKpUKRqMRlmwSBYAiERW73W5ZF5S6AADYtg3P81aO931fuy/bylVoHYwAN0aAGyPAjRHgxghwYwS4MQLcGAFujAA3RoAbI8CNEeBGK6CUkmkOJIywsWgFOp3OM34LrNxQu91+0jWGlYfdRqNxWa1WTy3Liu1Xg3VQSn21Wq37Wq12BeAzKGbZt+AygH0wFYEBSADvAN6Y+k+eH+ZyERSJimv9AAAAAElFTkSuQmCC" /><a href="pocket_ereaders.html">pocket_ereaders.html</a>
-    </td>
-    <td>3 kB</td>
-    <td>17-Jun-2024 15:26</td>
-</tr>
-
-		</tbody>
-    </table>
-    <span>
-        <span style="font-size: 12px">generated by </span><a style="font-size: 12px"
-    href="https://github.com/jayanta525/apindex" target="_blank">apindex</a>
-
-    </span>
+    <div class="container">
+        <div class="header">
+            <h1>Index of /blog</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 60%">Filename</th>
+                    <th style="width: 15%">Size</th>
+                    <th style="width: 25%">Last Modified</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="../" class="parent">
+                            <span class="folder-icon">📁</span> ..
+                        </a>
+                    </td>
+                    <td>-</td>
+                    <td>02-Apr-2025 15:24</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="boox.html">
+                            <span class="file-icon">📄</span> boox.html
+                        </a>
+                    </td>
+                    <td>3 kB</td>
+                    <td>02-Apr-2025 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="boox_go.html">
+                            <span class="file-icon">📄</span> boox_go.html
+                        </a>
+                    </td>
+                    <td>18 kB</td>
+                    <td>02-Apr-2025 15:32</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="countdown.html">
+                            <span class="file-icon">📄</span> countdown.html
+                        </a>
+                    </td>
+                    <td>2 kB</td>
+                    <td>02-Apr-2025 15:24</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="eduroam.html">
+                            <span class="file-icon">📄</span> eduroam.html
+                        </a>
+                    </td>
+                    <td>2 kB</td>
+                    <td>31-Jan-2023 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="eink.html">
+                            <span class="file-icon">📄</span> eink.html
+                        </a>
+                    </td>
+                    <td>1 kB</td>
+                    <td>13-Mar-2023 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="focus.html">
+                            <span class="file-icon">📄</span> focus.html
+                        </a>
+                    </td>
+                    <td>3 kB</td>
+                    <td>11-Apr-2024 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="gear.html">
+                            <span class="file-icon">📄</span> gear.html
+                        </a>
+                    </td>
+                    <td>2 kB</td>
+                    <td>14-Jul-2024 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="keitai.html">
+                            <span class="file-icon">📄</span> keitai.html
+                        </a>
+                    </td>
+                    <td>1 kB</td>
+                    <td>11-Apr-2024 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="photos1.html">
+                            <span class="file-icon">📄</span> photos1.html
+                        </a>
+                    </td>
+                    <td>0.5 kB</td>
+                    <td>02-Apr-2025 15:26</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="pocket_ereaders.html">
+                            <span class="file-icon">📄</span> pocket_ereaders.html
+                        </a>
+                    </td>
+                    <td>3 kB</td>
+                    <td>11-Apr-2024 15:26</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            generated by blog-explorer | last updated: 02-Apr-2025
+        </div>
     </div>
 </body>
 </html>
